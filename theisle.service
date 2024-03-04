@@ -1,5 +1,5 @@
 [Unit]
-Description=TheIsle Server
+Description=TheIsle Evrima Server
 After=network.target
 StartLimitIntervalSec=0
 
