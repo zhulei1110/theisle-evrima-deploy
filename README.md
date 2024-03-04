@@ -14,7 +14,7 @@ Theisle Server：7777-7778
 Steam Server：27015-27016  
 
 #### 可以不开启
-SteamCMD RCON：8888  
+SteamCMD RCON：9999  
 - evrima_kook_bot 和游戏部署在同一台服务器上，如果没有外部调用 rcon 的需要，就不用开启  
 
 #### 不确定是否开启
