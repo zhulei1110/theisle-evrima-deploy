@@ -47,7 +47,8 @@ sudo apt install lib32stdc++6 libc6-i386 libcurl4-gnutls-dev:i386 libsdl2-2.0-0:
 
 ### 5、创建目录，下载 SteamCMD 解压至该目录
 mkdir theisle_evrima  # 提前创建好安装文件夹  
-mkdir steamcmd & cd steamcmd  
+mkdir steamcmd  
+cd steamcmd  
 curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar zxvf -  
 
 ### 6、运行 ​​SteamCMD
