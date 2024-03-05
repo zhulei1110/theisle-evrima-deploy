@@ -71,7 +71,7 @@ Steam> exit  # 安装完成后退出
 - 服务器希望 64 位版本的 "steamclient.so" 位于 "/home/USER_NAME/.steam/sdk64/steamclient.so"  
 - 但它目前位于 "/home/USER_NAME/steamcmd/linux64/steamclient.so" 中  
 - 我们只需创建该文件夹并将其移动到那里  
-mkdir -p /home/USER_NAME/.steam/sdk64
+mkdir -p /home/USER_NAME/.steam/sdk64  
 mv /home/USER_NAME/steamcmd/linux64/steamclient.so /home/USER_NAME/.steam/sdk64/steamclient.so
 
 ## 游戏配置及运行
