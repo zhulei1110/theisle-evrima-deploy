@@ -43,7 +43,10 @@ sudo apt update
 
 ### 4、安装 SteamCMD 的依赖包
 sudo apt install lib32gcc1  或者  sudo apt install lib32gcc-s1  或者  sudo apt-get install libgcc1  
-sudo apt install lib32stdc++6 libc6-i386 libcurl4-gnutls-dev:i386 libsdl2-2.0-0:i386  
+sudo apt install lib32stdc++6  
+sudo apt install libc6-i386  
+sudo apt install libcurl4-gnutls-dev:i386  
+sudo apt install libsdl2-2.0-0:i386  
 
 ### 5、创建目录，下载 SteamCMD 解压至该目录
 mkdir theisle_evrima  # 提前创建好安装文件夹  
