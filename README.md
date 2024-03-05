@@ -23,7 +23,7 @@ SteamCMD RCON：9999
 ## 创建用户
 
 ### 1、创建新用户并添加到 "sudoers" 组
-sudo add user USER_NAME  
+sudo adduser USER_NAME  
 sudo usermod -aG sudo USER_NAME  
 
 ### 2、切换到新用户
