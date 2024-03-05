@@ -106,7 +106,7 @@ StartLimitIntervalSec=0
 Type=simple  
 Restart=always  
 RestartSec=1  
-User=USER_NAME
+User=USER_NAME  
 ExecStart=/usr/bin/env /home/USER_NAME/theisle_evrima/./TheIsleServer.sh MultiHome=192.168.1.100?Port=7777?QueryPort=7778 -log
   
 [Install]  
