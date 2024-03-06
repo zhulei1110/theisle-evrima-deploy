@@ -129,5 +129,39 @@ journalctl -u theisle_evrima.service
 
 
 
+## 反向代理服务
+
+游戏服务器：ssh root@180.76.243.7
+代理服务器：ssh root@120.48.158.208
+
+配置代理服务器
+
+### 1、进入代理服务器
+
+### 2、安装 Nginx
+
+安装必备组件:  
+sudo apt install curl gnupg2 ca-certificates lsb-release ubuntu-keyring  
+
+导入官方 nginx 签名密钥，以便 apt 可以验证包的真实性。获取密钥:  
+curl https://nginx.org/keys/nginx_signing.key | gpg --dearmor | sudo tee /usr/share/keyrings/nginx-archive-keyring.gpg > /dev/null  
+
+要为稳定的 nginx 包设置 apt 存储库，请运行以下命令:  
+echo "deb [signed-by=/usr/share/keyrings/nginx-archive-keyring.gpg] http://nginx.org/packages/ubuntu `lsb_release -cs` nginx" | sudo tee /etc/apt/sources.list.d/nginx.list  
+
+如果您想使用主线 nginx 包，请运行以下命令:  
+echo "deb [signed-by=/usr/share/keyrings/nginx-archive-keyring.gpg] http://nginx.org/packages/mainline/ubuntu `lsb_release -cs` nginx" | sudo tee /etc/apt/sources.list.d/nginx.list  
+
+设置存储库固定以更喜欢我们的包而不是系统提供的包:  
+echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 900\n" | sudo tee /etc/apt/preferences.d/99nginx  
+
+要安装 nginx，请运行以下命令:  
+sudo apt update
+sudo apt install nginx
+
+
+
+
+
 
 
