@@ -134,11 +134,11 @@ journalctl -u theisle_evrima.service
 游戏服务器：ssh root@180.76.243.7
 代理服务器：ssh root@120.48.158.208
 
-配置代理服务器
+### 配置代理服务器
 
-### 1、进入代理服务器
+#### 1、进入代理服务器
 
-### 2、安装 Nginx
+#### 2、安装 Nginx
 
 安装必备组件:  
 sudo apt install curl gnupg2 ca-certificates lsb-release ubuntu-keyring  
@@ -159,6 +159,42 @@ echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 
 sudo apt update
 sudo apt install nginx
 
+#### 3、修改 Nginx 配置
+
+#### 4、启动 Nginx
+
+### 配置游戏服务器
+
+游戏服务器正常运行状态下，使用了以下四个端口：
+- udp 7777
+- udp 7778
+- tcp 9999
+- tcp 35983
+
+查询 iptables 规则  
+sudo iptables -L  
+sudo iptables -t nat -L  # 查询nat表中的网络地址转换规则  
+sudo iptables -t nat -L --line-numbers  # 同时列出编号  
+
+添加规则
+- 将游戏服务器发出的请求转发到代理服务器上
+sudo iptables -t nat -A PREROUTING -p udp --dport 7777 -j DNAT --to-destination 120.48.158.208:7777
+sudo iptables -t nat -A PREROUTING -p udp --dport 7778 -j DNAT --to-destination 120.48.158.208:7778
+sudo iptables -t nat -A PREROUTING -p tcp --dport 9999 -j DNAT --to-destination 120.48.158.208:9999
+sudo iptables -t nat -A PREROUTING -p tcp --dport 35983 -j DNAT --to-destination 120.48.158.208:35983
+
+安装 iptables-persistent  
+- 使用 iptables-persistent 保存端口转发规则  
+- 它可以在系统重启后自动恢复 iptables 规则  
+sudo apt-get update  
+sudo apt-get install iptables-persistent  
+
+修改 iptables 规则后，可以使用以下命令保存
+sudo netfilter-persistent save
+
+删除规则  
+sudo iptables -t nat -D PREROUTING --line-numbers  
+例如：sudo iptables -t nat -D PREROUTING 1  
 
 
 
