@@ -156,8 +156,8 @@ echo "deb [signed-by=/usr/share/keyrings/nginx-archive-keyring.gpg] http://nginx
 echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 900\n" | sudo tee /etc/apt/preferences.d/99nginx  
 
 要安装 nginx，请运行以下命令:  
-sudo apt update
-sudo apt install nginx
+sudo apt update  
+sudo apt install nginx  
 
 #### 3、修改 Nginx 配置
 
