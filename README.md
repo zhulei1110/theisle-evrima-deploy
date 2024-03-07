@@ -181,7 +181,7 @@ sudo iptables -t nat -L --line-numbers  # 同时列出编号
 sudo iptables -t nat -A PREROUTING -p udp --dport 7777 -j DNAT --to-destination 120.48.158.208:7777  
 sudo iptables -t nat -A PREROUTING -p udp --dport 7778 -j DNAT --to-destination 120.48.158.208:7778  
 sudo iptables -t nat -A PREROUTING -p tcp --dport 9999 -j DNAT --to-destination 120.48.158.208:9999  
-sudo iptables -t nat -A PREROUTING -p tcp --dport 35983 -j DNAT --to-destination 120.48.158.208:35983  
+sudo iptables -t nat -A PREROUTING -p tcp --dport 35983 -j DNAT --to-destination 120.48.158.208:35983
 
 安装 iptables-persistent  
 - 使用 iptables-persistent 保存端口转发规则  
