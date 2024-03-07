@@ -189,8 +189,8 @@ sudo iptables -t nat -A PREROUTING -p tcp --dport 35983 -j DNAT --to-destination
 sudo apt-get update  
 sudo apt-get install iptables-persistent  
 
-修改 iptables 规则后，可以使用以下命令保存
-sudo netfilter-persistent save
+修改 iptables 规则后，可以使用以下命令保存  
+sudo netfilter-persistent save  
 
 删除规则  
 sudo iptables -t nat -D PREROUTING --line-numbers  
