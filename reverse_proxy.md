@@ -43,7 +43,7 @@ v2ray
 测试 v2ray 配置文件是否正确：v2ray test -config /usr/local/etc/v2ray/config.json  
 
 配置 v2ray 入站规则 
-
+监听端口：tcpdump -i any port 7777
 
 安装 nginx  
 配置 nginx 反向代理  
