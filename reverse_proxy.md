@@ -9,7 +9,7 @@ ssh root@120.48.158.208
 ## 在服务器上安装 shadowsocks 客户端
 - 用于 v2ray 安装加速
 
-### 安装教程：[命令行客户端](https://shadowsockshelp.github.io/Shadowsocks/linux.html#%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%AE%A2%E6%88%B7%E7%AB%AF)   
+### 安装教程：[Linux 使用 Shadowsocks 设置教程 #命令行客户端](https://shadowsockshelp.github.io/Shadowsocks/linux.html#%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%AE%A2%E6%88%B7%E7%AB%AF)   
 
 ### 配置文件
 ```
