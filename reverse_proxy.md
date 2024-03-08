@@ -6,12 +6,12 @@ ssh root@120.48.158.208
 查看进程信息：lsof -i  
 查看套接字统计：ss -tuln  
 
-## 在服务器上安装 shadowsocks 客户端
+## 在代理服务器上安装 shadowsocks 客户端
 - 用于 v2ray 安装加速
 
 ### 安装教程：[Linux 使用 Shadowsocks 设置教程 #命令行客户端](https://shadowsockshelp.github.io/Shadowsocks/linux.html#%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%AE%A2%E6%88%B7%E7%AB%AF)   
 
-### 配置文件
+### 代理服务器配置文件
 ```
 {
     "server":"pvcc01.ptrecord.com",
@@ -25,7 +25,7 @@ ssh root@120.48.158.208
 }
 ```
 
-### 报错修复方法
+### 运行 Shadowsocks 报错修复方法
 - 查看：[ubuntu 22.04 如何安装shadowsocks服务端](http://nfvschool.cn/archives/ubuntu-22.04-ru-he-an-zhuang-shadowsocksfu-wu-duan)   
 
 ## 安装 gsettings  
