@@ -5,9 +5,7 @@ ssh root@120.48.158.208
 查看进程信息：lsof -i  
 查看套接字统计：ss -tuln  
 
-安装 shadowsocks [命令行客户端](https://shadowsockshelp.github.io/Shadowsocks/linux.html#%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%AE%A2%E6%88%B7%E7%AB%AF)  
-[ubuntu 22.04 如何安装shadowsocks服务端](http://nfvschool.cn/archives/ubuntu-22.04-ru-he-an-zhuang-shadowsocksfu-wu-duan)  
-
+安装 shadowsocks [命令行客户端](https://shadowsockshelp.github.io/Shadowsocks/linux.html#%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%AE%A2%E6%88%B7%E7%AB%AF)   
 ```
 {
     "server":"pvcc01.ptrecord.com",
@@ -20,6 +18,19 @@ ssh root@120.48.158.208
     "fast_open": false
 }
 ```
+记住是使用 sslocal 运行 shadowsocks  
+报错修复方法：[ubuntu 22.04 如何安装shadowsocks服务端](http://nfvschool.cn/archives/ubuntu-22.04-ru-he-an-zhuang-shadowsocksfu-wu-duan)   
+
+安装 gsettings  
+sudo apt-get install gsettings-desktop-schemas  
+
+使用 gsettings 设置系统代理  
+gsettings set org.gnome.system.proxy mode 'manual'  
+gsettings set org.gnome.system.proxy.socks host '127.0.0.1'  
+gsettings set org.gnome.system.proxy.socks port 1080  
+
+将系统代理设置还原为正常状态  
+gsettings set org.gnome.system.proxy mode 'none'  
 
 安装 v2ray：https://guide.v2fly.org/prep/start.html  
 安装 v2rayA：https://v2raya.org/docs/prologue/introduction/  
