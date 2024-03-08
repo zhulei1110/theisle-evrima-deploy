@@ -1,8 +1,12 @@
 代理服务器  
 ssh root@120.48.158.208  
 
-安装 v2ray  
-安装 v2rayA  
+查看端口占用：netstat -tuln  
+查看进程信息：lsof -i  
+查看套接字统计：ss -tuln  
+
+安装 v2ray：https://guide.v2fly.org/prep/start.html  
+安装 v2rayA：https://v2raya.org/docs/prologue/introduction/  
 
 配置 v2ray 入站规则  
 安装 nginx  
