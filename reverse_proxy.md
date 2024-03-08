@@ -6,6 +6,7 @@ ssh root@120.48.158.208
 查看套接字统计：ss -tuln  
 
 安装 shadowsocks [命令行客户端](https://shadowsockshelp.github.io/Shadowsocks/linux.html#%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%AE%A2%E6%88%B7%E7%AB%AF)  
+[ubuntu 22.04 如何安装shadowsocks服务端](http://nfvschool.cn/archives/ubuntu-22.04-ru-he-an-zhuang-shadowsocksfu-wu-duan)  
 
 ```
 {
