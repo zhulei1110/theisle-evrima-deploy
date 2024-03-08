@@ -38,7 +38,9 @@ gsettings set org.gnome.system.proxy mode 'none'
 v2ray  
 程序地址：/usr/local/bin/v2ray  
 配置文件：/usr/local/etc/v2ray/config.json  
-系统服务文件：/etc/systemd/system/v2ray.service  
+系统服务文件：/etc/systemd/system/v2ray.service 
+
+测试 v2ray 配置文件是否正确：v2ray test -config /usr/local/etc/v2ray/config.json  
 
 配置 v2ray 入站规则 
 
