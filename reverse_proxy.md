@@ -5,6 +5,21 @@ ssh root@120.48.158.208
 查看进程信息：lsof -i  
 查看套接字统计：ss -tuln  
 
+安装 shadowsocks [命令行客户端](https://shadowsockshelp.github.io/Shadowsocks/linux.html#%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%AE%A2%E6%88%B7%E7%AB%AF)  
+
+```
+{
+    "server":"pvcc01.ptrecord.com",
+    "server_port":63125,
+    "local_address": "127.0.0.1",
+    "local_port":1080,
+    "password":"dCOTCu",
+    "timeout":300,
+    "method":"aes-256-cfb",
+    "fast_open": false
+}
+```
+
 安装 v2ray：https://guide.v2fly.org/prep/start.html  
 安装 v2rayA：https://v2raya.org/docs/prologue/introduction/  
 
