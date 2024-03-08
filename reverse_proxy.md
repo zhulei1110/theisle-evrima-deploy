@@ -35,7 +35,14 @@ gsettings set org.gnome.system.proxy mode 'none'
 安装 v2ray：https://guide.v2fly.org/prep/start.html  
 安装 v2rayA：https://v2raya.org/docs/prologue/introduction/  
 
-配置 v2ray 入站规则  
+v2ray  
+程序地址：/usr/local/bin/v2ray  
+配置文件：/usr/local/etc/v2ray/config.json  
+系统服务文件：/etc/systemd/system/v2ray.service  
+
+配置 v2ray 入站规则 
+
+
 安装 nginx  
 配置 nginx 反向代理  
 
