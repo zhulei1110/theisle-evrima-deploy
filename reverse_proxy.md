@@ -51,7 +51,9 @@ gsettings set org.gnome.system.proxy mode 'none'
 安装教程：https://v2raya.org/docs/prologue/introduction/  
 系统服务文件：/lib/systemd/system/v2raya.service
 
-## 安装 nginx  
+## 安装 nginx
+
+安装文档：https://nginx.org/en/linux_packages.html#Ubuntu
 
 ### 配置 nginx 反向代理
 ```
