@@ -53,10 +53,10 @@ gsettings set org.gnome.system.proxy mode 'none'
 
 ## 安装 nginx
 
-安装文档：https://nginx.org/en/linux_packages.html#Ubuntu
-系统服务文件：/lib/systemd/system/nginx.service
-主配置文件：/etc/nginx/nginx.conf
-子配置文件目录：/etc/nginx/conf.d/
+安装文档：https://nginx.org/en/linux_packages.html#Ubuntu  
+系统服务文件：/lib/systemd/system/nginx.service  
+主配置文件：/etc/nginx/nginx.conf  
+子配置文件目录：/etc/nginx/conf.d/  
 
 ### 配置 nginx 反向代理
 ```
